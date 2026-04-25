@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="home">Home</div>
+      <div className="home">
+        <SideBar />
+      </div>
     </>
   );
 }
