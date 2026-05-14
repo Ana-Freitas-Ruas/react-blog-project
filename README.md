@@ -1,70 +1,256 @@
-# Getting Started with Create React App
+# 📝 React Blog Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um blog moderno e responsivo desenvolvido com React, oferecendo uma experiência completa de criação e consumo de conteúdo. Este projeto demonstra as melhores práticas de desenvolvimento frontend com React, incluindo roteamento, componentes reutilizáveis e design responsivo.
 
-## Available Scripts
+## 🚀 Funcionalidades
 
-In the project directory, you can run:
+### ✨ Principais Recursos
 
-### `npm start`
+- **📱 Design Responsivo**: Interface adaptável para desktop, tablet e mobile
+- **🔐 Sistema de Autenticação**: Login e registro de usuários
+- **✍️ Criação de Posts**: Interface intuitiva para escrever e publicar artigos
+- **📖 Leitura de Posts**: Visualização de posts individuais com layout otimizado
+- **👤 Perfil do Usuário**: Configurações pessoais e gerenciamento de conta
+- **🧭 Navegação Intuitiva**: Menu superior com links para todas as seções
+- **📱 Redes Sociais**: Links para compartilhamento em mídias sociais
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎯 Páginas Disponíveis
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Home (/)**: Página inicial com lista de posts em destaque
+- **Login (/login)**: Autenticação de usuários existentes
+- **Registro (/register)**: Cadastro de novos usuários
+- **Escrever (/write)**: Criação e publicação de novos posts
+- **Configurações (/settings)**: Gerenciamento do perfil do usuário
+- **Post Individual (/post/:id)**: Visualização completa de um post específico
 
-### `npm test`
+## 🏗️ Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+blog-project/
+├── public/
+│   ├── index.html          # Template HTML principal
+│   └── favicon.ico         # Ícone da aplicação
+├── src/
+│   ├── components/         # Componentes reutilizáveis
+│   │   ├── header/         # Cabeçalho da página
+│   │   │   ├── Header.jsx
+│   │   │   └── header.css
+│   │   ├── topBar/         # Barra de navegação superior
+│   │   │   ├── TopBar.jsx
+│   │   │   └── topBar.css
+│   │   ├── sidebar/        # Barra lateral com informações
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── sidebar.css
+│   │   ├── singlePost/     # Componente de post individual
+│   │   │   ├── SinglePost.jsx
+│   │   │   └── singlePost.css
+│   │   ├── write/          # Formulário de criação de posts
+│   │   │   ├── Write.jsx
+│   │   │   └── write.css
+│   │   └── post/           # Componente de preview de post
+│   │       ├── Post.jsx
+│   │       └── post.css
+│   ├── pages/              # Páginas da aplicação
+│   │   ├── home/           # Página inicial
+│   │   │   ├── Home.jsx
+│   │   │   └── home.css
+│   │   ├── login/          # Página de login
+│   │   │   ├── Login.jsx
+│   │   │   └── login.css
+│   │   ├── register/       # Página de registro
+│   │   │   ├── Register.jsx
+│   │   │   └── register.css
+│   │   ├── settings/       # Página de configurações
+│   │   │   ├── Settings.jsx
+│   │   │   └── settings.css
+│   │   ├── single/         # Página de post único
+│   │   │   ├── Single.jsx
+│   │   │   └── single.css
+│   │   └── posts/          # Lista de posts
+│   │       ├── Posts.jsx
+│   │       └── posts.css
+│   ├── App.js              # Componente principal da aplicação
+│   ├── App.css             # Estilos globais
+│   └── index.js            # Ponto de entrada da aplicação
+├── package.json            # Dependências e scripts do projeto
+├── README.md               # Esta documentação
+└── .gitignore             # Arquivos ignorados pelo Git
+```
 
-### `npm run build`
+## 🛠️ Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React 19.2.5**: Biblioteca JavaScript para construção de interfaces
+- **React Router DOM 7.15.1**: Roteamento para navegação SPA
+- **React DOM 19.2.5**: Renderização do React no DOM
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Desenvolvimento e Testes
 
-### `npm run eject`
+- **Create React App**: Ferramenta de build e desenvolvimento
+- **Testing Library**: Suite de testes para React
+- **Jest**: Framework de testes JavaScript
+- **ESLint**: Linting e formatação de código
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Estilos e UI
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **CSS Modules**: Estilos componentizados
+- **Font Awesome**: Ícones vetoriais
+- **Google Fonts**: Tipografia personalizada
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📋 Pré-requisitos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Antes de começar, certifique-se de ter instalado:
 
-## Learn More
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn** (gerenciadores de pacotes)
+- **Git** (para controle de versão)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Instalação e Execução
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone o repositório
 
-### Code Splitting
+```bash
+git clone https://github.com/Ana-Freitas-Ruas/react-blog-project.git
+cd react-blog-project
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Instale as dependências
 
-### Analyzing the Bundle Size
+```bash
+npm install
+# ou
+yarn install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3. Execute o projeto em modo de desenvolvimento
 
-### Making a Progressive Web App
+```bash
+npm start
+# ou
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000)
 
-### Advanced Configuration
+### 4. Build para produção
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm run build
+# ou
+yarn build
+```
 
-### Deployment
+## 🧪 Testes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Executar todos os testes
 
-### `npm run build` fails to minify
+```bash
+npm test
+# ou
+yarn test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Executar testes em modo watch
+
+```bash
+npm test -- --watchAll=false
+```
+
+### Executar testes com coverage
+
+```bash
+npm test -- --coverage
+```
+
+## 🎨 Personalização
+
+### Estilos
+
+Cada componente possui seu próprio arquivo CSS localizado na mesma pasta. Para personalizar:
+
+1. Localize o arquivo `.css` do componente desejado
+2. Modifique as classes CSS conforme necessário
+3. As mudanças serão aplicadas automaticamente com hot reload
+
+### Componentes
+
+- **Header**: Personalize o título e subtítulo do blog
+- **TopBar**: Adicione ou remova links de navegação
+- **Sidebar**: Modifique as categorias e informações do autor
+- **Posts**: Ajuste o layout da lista de posts
+
+## 🔧 Scripts Disponíveis
+
+| Comando         | Descrição                                   |
+| --------------- | ------------------------------------------- |
+| `npm start`     | Inicia o servidor de desenvolvimento        |
+| `npm run build` | Cria build otimizado para produção          |
+| `npm test`      | Executa a suíte de testes                   |
+| `npm run eject` | Remove dependências de build (irreversível) |
+
+## 🌐 Deploy
+
+### Netlify
+
+1. Execute `npm run build`
+2. Faça upload da pasta `build/` para o Netlify
+3. Configure o domínio (opcional)
+
+### Vercel
+
+1. Conecte seu repositório no Vercel
+2. Configure o comando de build como `npm run build`
+3. Deploy automático será executado
+
+### GitHub Pages
+
+1. Instale `gh-pages`: `npm install --save-dev gh-pages`
+2. Adicione ao `package.json`:
+   ```json
+   "homepage": "https://seu-usuario.github.io/react-blog-project",
+   "scripts": {
+     "deploy": "gh-pages -d build"
+   }
+   ```
+3. Execute `npm run deploy`
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. **Fork** o projeto
+2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um **Pull Request**
+
+### Diretrizes de Contribuição
+
+- Mantenha o código limpo e bem documentado
+- Adicione testes para novas funcionalidades
+- Siga as convenções de nomenclatura existentes
+- Atualize a documentação quando necessário
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## 👥 Autor
+
+**Ana Ruas**
+
+- Email: anaruas.professional@outlook.com
+- GitHub: [@Ana-Freitas-Ruas](https://github.com/Ana-Freitas-Ruas)
+
+## 🙏 Agradecimentos
+
+- [Create React App](https://github.com/facebook/create-react-app) - Ferramenta de build
+- [React Router](https://reactrouter.com/) - Roteamento SPA
+- [Pexels](https://www.pexels.com/) - Imagens de exemplo
+- [Font Awesome](https://fontawesome.com/) - Ícones
+- [Lama Dev](https://www.youtube.com/@LlamaDev) - Tutorial em vídeo que serviu como base para este projeto
+
+---
+
+⭐ **Dê uma estrela se este projeto te ajudou!**
