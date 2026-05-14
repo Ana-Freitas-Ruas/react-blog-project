@@ -1,256 +1,256 @@
-# 📝 React Blog Project
+﻿# 📝 React Blog Project
 
-Um blog moderno e responsivo desenvolvido com React, oferecendo uma experiência completa de criação e consumo de conteúdo. Este projeto demonstra as melhores práticas de desenvolvimento frontend com React, incluindo roteamento, componentes reutilizáveis e design responsivo.
+A modern and responsive blog built with React, offering a complete experience for creating and consuming content. This project demonstrates frontend best practices with React, including routing, reusable components, and responsive design.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-### ✨ Principais Recursos
+### ✨ Key Features
 
-- **📱 Design Responsivo**: Interface adaptável para desktop, tablet e mobile
-- **🔐 Sistema de Autenticação**: Login e registro de usuários
-- **✍️ Criação de Posts**: Interface intuitiva para escrever e publicar artigos
-- **📖 Leitura de Posts**: Visualização de posts individuais com layout otimizado
-- **👤 Perfil do Usuário**: Configurações pessoais e gerenciamento de conta
-- **🧭 Navegação Intuitiva**: Menu superior com links para todas as seções
-- **📱 Redes Sociais**: Links para compartilhamento em mídias sociais
+- **📱 Responsive Design**: Adaptable interface for desktop, tablet, and mobile
+- **🔐 Authentication Flow**: Login and registration pages
+- **✍️ Post Creation**: Intuitive interface to write and publish articles
+- **📖 Post Reading**: Individual post view with optimized layout
+- **👤 User Profile**: Personal settings and account management
+- **🧭 Easy Navigation**: Top menu with links to all sections
+- **📱 Social Links**: Social media icons for sharing or brand presence
 
-### 🎯 Páginas Disponíveis
+### 🎯 Available Pages
 
-- **Home (/)**: Página inicial com lista de posts em destaque
-- **Login (/login)**: Autenticação de usuários existentes
-- **Registro (/register)**: Cadastro de novos usuários
-- **Escrever (/write)**: Criação e publicação de novos posts
-- **Configurações (/settings)**: Gerenciamento do perfil do usuário
-- **Post Individual (/post/:id)**: Visualização completa de um post específico
+- **Home (/)**: Main page showing a list of featured posts
+- **Login (/login)**: Existing user authentication page
+- **Register (/register)**: New user signup page
+- **Write (/write)**: Create and publish a new post
+- **Settings (/settings)**: User profile and settings management
+- **Single Post (/post/:id)**: Full single post view
 
-## 🏗️ Estrutura do Projeto
+## 🏗️ Project Structure
 
 ```
 blog-project/
 ├── public/
-│   ├── index.html          # Template HTML principal
-│   └── favicon.ico         # Ícone da aplicação
+│   ├── index.html          # Main HTML template
+│   └── favicon.ico         # App icon
 ├── src/
-│   ├── components/         # Componentes reutilizáveis
-│   │   ├── header/         # Cabeçalho da página
+│   ├── components/         # Reusable components
+│   │   ├── header/         # Page header
 │   │   │   ├── Header.jsx
 │   │   │   └── header.css
-│   │   ├── topBar/         # Barra de navegação superior
+│   │   ├── topBar/         # Top navigation bar
 │   │   │   ├── TopBar.jsx
 │   │   │   └── topBar.css
-│   │   ├── sidebar/        # Barra lateral com informações
+│   │   ├── sidebar/        # Sidebar with author info
 │   │   │   ├── Sidebar.jsx
 │   │   │   └── sidebar.css
-│   │   ├── singlePost/     # Componente de post individual
+│   │   ├── singlePost/     # Single post component
 │   │   │   ├── SinglePost.jsx
 │   │   │   └── singlePost.css
-│   │   ├── write/          # Formulário de criação de posts
+│   │   ├── write/          # Post creation form
 │   │   │   ├── Write.jsx
 │   │   │   └── write.css
-│   │   └── post/           # Componente de preview de post
+│   │   └── post/           # Post preview component
 │   │       ├── Post.jsx
 │   │       └── post.css
-│   ├── pages/              # Páginas da aplicação
-│   │   ├── home/           # Página inicial
+│   ├── pages/              # Application pages
+│   │   ├── home/           # Home page
 │   │   │   ├── Home.jsx
 │   │   │   └── home.css
-│   │   ├── login/          # Página de login
+│   │   ├── login/          # Login page
 │   │   │   ├── Login.jsx
 │   │   │   └── login.css
-│   │   ├── register/       # Página de registro
+│   │   ├── register/       # Register page
 │   │   │   ├── Register.jsx
 │   │   │   └── register.css
-│   │   ├── settings/       # Página de configurações
+│   │   ├── settings/       # Settings page
 │   │   │   ├── Settings.jsx
 │   │   │   └── settings.css
-│   │   ├── single/         # Página de post único
+│   │   ├── single/         # Single post page
 │   │   │   ├── Single.jsx
 │   │   │   └── single.css
-│   │   └── posts/          # Lista de posts
+│   │   └── posts/          # Posts list page
 │   │       ├── Posts.jsx
 │   │       └── posts.css
-│   ├── App.js              # Componente principal da aplicação
-│   ├── App.css             # Estilos globais
-│   └── index.js            # Ponto de entrada da aplicação
-├── package.json            # Dependências e scripts do projeto
-├── README.md               # Esta documentação
-└── .gitignore             # Arquivos ignorados pelo Git
+│   ├── App.js              # Main application component
+│   ├── App.css             # Global styles
+│   └── index.js            # Application entry point
+├── package.json            # Dependencies and scripts
+├── README.md               # Project documentation
+└── .gitignore             # Files ignored by Git
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 ### Frontend
 
-- **React 19.2.5**: Biblioteca JavaScript para construção de interfaces
-- **React Router DOM 7.15.1**: Roteamento para navegação SPA
-- **React DOM 19.2.5**: Renderização do React no DOM
+- **React 19.2.5**: JavaScript library for building UI
+- **React Router DOM 7.15.1**: Routing for SPA navigation
+- **React DOM 19.2.5**: React renderer for the DOM
 
-### Desenvolvimento e Testes
+### Development and Testing
 
-- **Create React App**: Ferramenta de build e desenvolvimento
-- **Testing Library**: Suite de testes para React
-- **Jest**: Framework de testes JavaScript
-- **ESLint**: Linting e formatação de código
+- **Create React App**: Build and development toolchain
+- **Testing Library**: React testing utilities
+- **Jest**: JavaScript test framework
+- **ESLint**: Code linting and quality checks
 
-### Estilos e UI
+### Styles and UI
 
-- **CSS Modules**: Estilos componentizados
-- **Font Awesome**: Ícones vetoriais
-- **Google Fonts**: Tipografia personalizada
+- **CSS Modules**: Component-based styles
+- **Font Awesome**: Vector icons
+- **Google Fonts**: Custom typography
 
-## 📋 Pré-requisitos
+## 📋 Prerequisites
 
-Antes de começar, certifique-se de ter instalado:
+Before getting started, make sure you have installed:
 
-- **Node.js** (versão 16 ou superior)
-- **npm** ou **yarn** (gerenciadores de pacotes)
-- **Git** (para controle de versão)
+- **Node.js** (version 16 or higher)
+- **npm** or **yarn** (package managers)
+- **Git** (version control)
 
-## 🚀 Instalação e Execução
+## 🚀 Installation and Running
 
-### 1. Clone o repositório
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Ana-Freitas-Ruas/react-blog-project.git
 cd react-blog-project
 ```
 
-### 2. Instale as dependências
+### 2. Install dependencies
 
 ```bash
 npm install
-# ou
+# or
 yarn install
 ```
 
-### 3. Execute o projeto em modo de desenvolvimento
+### 3. Run the project in development mode
 
 ```bash
 npm start
-# ou
+# or
 yarn start
 ```
 
-A aplicação estará disponível em [http://localhost:3000](http://localhost:3000)
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-### 4. Build para produção
+### 4. Create a production build
 
 ```bash
 npm run build
-# ou
+# or
 yarn build
 ```
 
-## 🧪 Testes
+## 🧪 Tests
 
-### Executar todos os testes
+### Run all tests
 
 ```bash
 npm test
-# ou
+# or
 yarn test
 ```
 
-### Executar testes em modo watch
+### Run tests in watch mode
 
 ```bash
 npm test -- --watchAll=false
 ```
 
-### Executar testes com coverage
+### Run test coverage
 
 ```bash
 npm test -- --coverage
 ```
 
-## 🎨 Personalização
+## 🎨 Customization
 
-### Estilos
+### Styles
 
-Cada componente possui seu próprio arquivo CSS localizado na mesma pasta. Para personalizar:
+Each component has its own CSS file in the same folder. To customize:
 
-1. Localize o arquivo `.css` do componente desejado
-2. Modifique as classes CSS conforme necessário
-3. As mudanças serão aplicadas automaticamente com hot reload
+1. Find the `.css` file for the component you want
+2. Edit the class styles as needed
+3. Changes will refresh automatically with hot reload
 
-### Componentes
+### Components
 
-- **Header**: Personalize o título e subtítulo do blog
-- **TopBar**: Adicione ou remova links de navegação
-- **Sidebar**: Modifique as categorias e informações do autor
-- **Posts**: Ajuste o layout da lista de posts
+- **Header**: Customize the blog title and subtitle
+- **TopBar**: Add or remove navigation links
+- **Sidebar**: Update categories and author information
+- **Posts**: Change the post list layout
 
-## 🔧 Scripts Disponíveis
+## 🔧 Available Scripts
 
-| Comando         | Descrição                                   |
-| --------------- | ------------------------------------------- |
-| `npm start`     | Inicia o servidor de desenvolvimento        |
-| `npm run build` | Cria build otimizado para produção          |
-| `npm test`      | Executa a suíte de testes                   |
-| `npm run eject` | Remove dependências de build (irreversível) |
+| Command         | Description                               |
+| --------------- | ----------------------------------------- |
+| `npm start`     | Starts the development server             |
+| `npm run build` | Creates an optimized production build     |
+| `npm test`      | Runs the test suite                       |
+| `npm run eject` | Removes build dependencies (irreversible) |
 
-## 🌐 Deploy
+## 🌐 Deployment
 
 ### Netlify
 
-1. Execute `npm run build`
-2. Faça upload da pasta `build/` para o Netlify
-3. Configure o domínio (opcional)
+1. Run `npm run build`
+2. Upload the `build/` folder to Netlify
+3. Configure the domain (optional)
 
 ### Vercel
 
-1. Conecte seu repositório no Vercel
-2. Configure o comando de build como `npm run build`
-3. Deploy automático será executado
+1. Connect your repository to Vercel
+2. Set the build command to `npm run build`
+3. Automatic deployment will run
 
 ### GitHub Pages
 
-1. Instale `gh-pages`: `npm install --save-dev gh-pages`
-2. Adicione ao `package.json`:
+1. Install `gh-pages`: `npm install --save-dev gh-pages`
+2. Add to `package.json`:
    ```json
-   "homepage": "https://seu-usuario.github.io/react-blog-project",
+   "homepage": "https://your-username.github.io/react-blog-project",
    "scripts": {
      "deploy": "gh-pages -d build"
    }
    ```
-3. Execute `npm run deploy`
+3. Run `npm run deploy`
 
-## 🤝 Contribuição
+## 🤝 Contribution
 
-Contribuições são bem-vindas! Para contribuir:
+Contributions are welcome! To contribute:
 
-1. **Fork** o projeto
-2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um **Pull Request**
+1. **Fork** the project
+2. Create a **new branch** for your feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. Open a **Pull Request**
 
-### Diretrizes de Contribuição
+### Contribution Guidelines
 
-- Mantenha o código limpo e bem documentado
-- Adicione testes para novas funcionalidades
-- Siga as convenções de nomenclatura existentes
-- Atualize a documentação quando necessário
+- Keep code clean and well documented
+- Add tests for new features
+- Follow existing naming conventions
+- Update documentation when needed
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## 👥 Autor
+## 👥 Author
 
 **Ana Ruas**
 
 - Email: anaruas.professional@outlook.com
 - GitHub: [@Ana-Freitas-Ruas](https://github.com/Ana-Freitas-Ruas)
 
-## 🙏 Agradecimentos
+## 🙏 Credits
 
-- [Create React App](https://github.com/facebook/create-react-app) - Ferramenta de build
-- [React Router](https://reactrouter.com/) - Roteamento SPA
-- [Pexels](https://www.pexels.com/) - Imagens de exemplo
-- [Font Awesome](https://fontawesome.com/) - Ícones
-- [Lama Dev](https://www.youtube.com/@LlamaDev) - Tutorial em vídeo que serviu como base para este projeto
+- [Create React App](https://github.com/facebook/create-react-app) - Build tool
+- [React Router](https://reactrouter.com/) - SPA routing
+- [Pexels](https://www.pexels.com/) - Example images
+- [Font Awesome](https://fontawesome.com/) - Icons
+- [Lama Dev](https://www.youtube.com/@LamaDev) - Tutorial used as the base for this project
 
 ---
 
-⭐ **Dê uma estrela se este projeto te ajudou!**
+⭐ **Give this project a star if it helped you!**
